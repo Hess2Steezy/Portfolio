@@ -6,60 +6,64 @@
     <link rel="icon" href="favicon.ico">
     <title>Hesten's Personal Site</title>
 
-<style media="screen">
+      <style>
+        body {
+          background-color:hsla(0,100%,50%,1);
+          background-image:
+          radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+          radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+          radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+          radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+          radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+          radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+          radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+        }
 
-  body {
-    background-color: #BBBBBB;
-  }
+        .links {
+          margin: 100px;
+          text-align: center;
+        }
 
-</style>
-
-
+      </style>
   </head>
 
   <body style="background-color: #BBBBBB;">
-    <!-- This table allows for the image to be placed right next to the text by using table data tags to put both elements in an invisible table adjacent to one another -->
 
+    <!-- Notes Nested tables:
+     <tr> is equivalent to adding a new row
+     <td> is equivalent to adding a new column -->
+
+  <!-- Beginning of Header/Initial First Table -->
     <table border="0" cellspacing="50">
       <tr>
         <td>
           <img src="drip.png" alt=""  width="250" height="250">
         </td>
-      <td>
 
+      <!-- First Nested Table -->
+      <td>
         <table border="0">
           <tr>
-            <td>
-              <h1>Guy Hesten Parrish</h1>
-            </td>
+            <td><h1>Guy Hesten Parrish</h1></td>
             <tr>
-              <td>
-                <p>
-                  <em>Founder and CEO of <a href="https://codepen.io/afroheadhess/project/editor/ZvxGwd">Flag The Grade</a></em>
-                </p>
-                <p>I am an African American 17 year old east oakland native who enjoys <br>
+              <td><p><em>Founder and CEO of<a href="https://codepen.io/afroheadhess/project/editor/ZvxGwd">Flag The Grade</a></em></p>
+                  <p>I am an African American 17 year old east oakland native who enjoys <br>
                   front end web design as well as developing my software engineering skills</p>
               </td>
-
             </tr>
-
-            </td>
+          </td>
           </tr>
-
         </table>
 
-      </td>
+<!-- Second Nested table -->
       <td>
-        <!--  Beginning of Nested Table -->
         <table border="0">
           <tr>
             <td><h1>Time and Date</h1></td>
           </tr>
         </table>
-        <!-- End of Nested Table -->
 
-
-        <!-- Clock Widget Start -->
+<!-- Third Nested table -->
         <table border="0" cellspacing="20">
           <tr>
             <td>
@@ -68,31 +72,30 @@
           </td>
           </tr>
         </table>
-
-
-        <!-- Clock Widget End -->
       </td>
     </tr>
     </table>
+<!-- End of Header -->
+<hr>
 
-    <hr>
-    <h2>Where I'm From</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12614.22493893068!2d-122.2371053119719!3d37.77700227614297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f86f44021e1f1%3A0x99ad2681b744ed7c!2sFruitvale%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1665078550486!5m2!1sen!2sus"
+    <h2 class="center">Where I'm From</h2>
+    <iframe class="center"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12614.22493893068!2d-122.2371053119719!3d37.77700227614297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f86f44021e1f1%3A0x99ad2681b744ed7c!2sFruitvale%2C%20Oakland%2C%20CA!5e0!3m2!1sen!2sus!4v1665078550486!5m2!1sen!2sus"
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<!-- Strength and B tag both do the same thing (bold the text within its tag)-->
-    <h3>Invovlements and Accomplishments</h3>
 
-      <ul>
+<hr>
+
+<!-- Strength and B tag both do the same thing (bold the text within its tag)-->
+    <h3 class="right-side">Invovlements and Accomplishments</h3>
+
+      <ul class="right-side">
         <li><strong>2021 Student of the month: </Strong>Integrity</li>
         <li><b>Student Government:</b> 2022-23 Executive Vice President, 2021-22 Junior Class President</li>
       </ul>
 
 <hr>
 
-    <h3>Working Experience</h3>
-
-
-    <table border="0" cellspacing="2">
+    <h3 class="left-side">Working Experience</h3>
+    <table class="left-side" border="0" cellspacing="2">
       <thead>
         <tr>
           <th>Date</th>
@@ -121,14 +124,9 @@
 
 <hr>
 
-    <h3>Skills</h3>
+    <h3 class="right-side">Skills</h3>
 
-<!--
-          Example  Nested tables:
-      <tr> is equivalent to adding a new row
-      <td> is equivalent to adding a new column
-                                                  -->
-<table border="0" cellspacing="10">
+<table class="right-side" border="0" cellspacing="10">
   <tr>
     <td>
       <table>
@@ -164,22 +162,23 @@
     </td>
   </tr>
 </table>
+<hr>
 
+    <table class="center"border="0" cellspacing="10">
+      <tr>
+        <td class="links"><a href="PP.hobbies.html"><h3 style="color: #000">My Hobbies</h3></a></td>
+        <td class="links"><a href="PP.contact_me.html"><h3 style="color: #000">Contact Me</h3></a></td>
+      </tr>
+    </table>
 
-
-    <hr>
-    <a href="PP.hobbies.html"><h3 style="color: #000">My Hobbies</h3></a>
-    <a href="PP.contact_me.html"><h3 style="color: #000">Contact Me</h3></a>
 <br>
-    <h3>Me Solving The Rubiks Cube</h3>
+
+    <h3 class="center">Me Solving The Rubiks Cube</h3>
     <br>
-    <iframe width="560" height="315"
+    <iframe class="center" width="560" height="315"
     src="https://www.youtube.com/embed/sf8ssnKPTdo"
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
-
-
-
   </body>
 </html>
