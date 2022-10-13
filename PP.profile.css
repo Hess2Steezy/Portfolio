@@ -29,3 +29,44 @@ body {
   margin-right: 50px;
   text-align: center;
 }
+
+.marqueeDiv {
+  font-size: 40px;
+  color: black;
+  padding: 0.5px;
+}
+
+.marquee {
+  -moz-animation: marquee 10s linear infinite;
+  -webkit-animation: marquee 10s linear infinite;
+  animation: marquee 10s linear infinite;
+}
+
+@-moz-keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      @-webkit-keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      @keyframes marquee {
+        0% {
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%)
+        }
+        100% {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+      }
